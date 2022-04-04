@@ -1,0 +1,20 @@
+{
+  "name": "action-setup-metagraf",
+  "version": "1.0.0",
+  "description": "Install and setup metagraf",
+  "main": "src/index.js",
+  "repository": "git@github.com:terbolous/action-setup-metagraf.git",
+  "author": "Erik Weber <erik.weber@norsk-tipping.no>",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build src/index.js -m"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/tool-cache": "^1.7.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.3",
+    "prettier": "^2.6.2"
+  }
+}

@@ -1,0 +1,6 @@
+name: Validation
+description: Install and setup metagraf
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
