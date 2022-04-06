@@ -1,6 +1,11 @@
-name: Validation
-description: Install and setup metagraf
-
+name: 'Setup MetaGraf'
+description: Install and setup MetaGraf
+author: '@norsk-tipping/team-accelerate'
+inputs:
+  version:
+    description: "Specify MetaGraf version to install. Latest will be installed if not specified."
+    required: false
+    
 runs:
   using: 'node16'
   main: 'dist/index.js'

@@ -1,0 +1,13 @@
+on: push
+name: verify
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    name: verify
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+    - name: setup-metagraf
+      uses: ./
+      id: metagraf
+    - run: mg version
